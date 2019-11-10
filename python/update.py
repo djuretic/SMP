@@ -32,7 +32,6 @@ ids = list(passages.keys())
 ids.sort()
 print(Fore.YELLOW + str(ids))
 next(reader) # Header
-next(reader)
 for row in reader:
     name = row[0]
     hud = row[1]
