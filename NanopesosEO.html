@@ -101,7 +101,7 @@ Vi sentas vin bonŝanca havante vian propran loko, kvankam vi pagas ''$200.000''
 Subite, via [[poŝtelefono|celular]] sonoras.</tw-passagedata><tw-passagedata name="celular" pid="3" position="775,573" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt; &lt;img src="https://i.imgur.com/i92F58W.gif"&gt;
 &lt;i&gt;&ldquo;Nova Sciigo: Elektra Kalkulo. Totalo: $8.050. Limdato: 30 tagoj pli.&rdquo;&lt;/i&gt; Vi povas [[tuj pagi ĉi tiun kalkulon|Pagar cuenta de luz]], aŭ [[prokrasti ĝin|Postergar pago de cuenta]] kaj vi ricevos memorigon poste.</tw-passagedata><tw-passagedata name="Pagar cuenta de luz" pid="4" position="700,725" size="100,100" tags="">(set: $sueldo to $sueldo - 8050)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 $img
-Vi finas fari la bankan transdonon. Restas ''(print: asPesos($sueldo))'' en via akonto (set: $luz to 0) 
+Vi finas fari la bankan transdonon. Restas ''(print: asPesos($sueldo))'' en via konto (set: $luz to 0) 
 [[Morgaŭ|Ma&ntilde;ana]] vi devas vekiĝi frue por atendi la buson kaj iri labori.</tw-passagedata><tw-passagedata name="Postergar pago de cuenta" pid="5" position="850,725" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 $img
 Vi decidas prokrasti la kalkulan pagon, kaj vi agordas rememorigon por 2 semajnoj pli. [[Morgaŭ|Ma&ntilde;ana]] vi devas labori.</tw-passagedata><tw-passagedata name="Ma&ntilde;ana" pid="6" position="700,873" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
@@ -150,55 +150,55 @@ Post momento la tagmanĝa horo finiĝas kaj ĉiuj revenis. Vi devas komenci labo
 $img
 Reveninte al la oficejo, vi havas pli da energio por daŭrigi labori. Vi finis ĉiujn viajn taskojn ĝustatempe kaj nun vi povas [[iri hejmen|llegar a casa]] kaj ripozi.</tw-passagedata><tw-passagedata name="llegar a casa" pid="17" position="815,1468" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
-Vi ĵus revenis el la oficejo. Ĉi-foje vi memoris pretigi vian tagmanĝon, sed mankas manĝaĵoj, do vi decidis iri al la [[superbazaro|supermercado]] por aĉeti aferojn por via hejmo.</tw-passagedata><tw-passagedata name="supermercado" pid="18" position="815,1618" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/STlwFhB.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/YwUXWAi.gif'&gt;") ]
+Vi ĵus revenis el la oficejo. Ĉi-foje vi memoris pretigi vian tagmanĝon, sed mankas manĝaĵoj, do vi decidis iri al la [[superbazaro|supermercado]] por aĉeti aferojn por via hejmo.</tw-passagedata><tw-passagedata name="supermercado" pid="18" position="815,1618" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/STlwFhB.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/YwUXWAi.gif'&gt;") ]
 $img
-At the supermarket you try to buy basic stuff such as rice, noodles, vegetables, etc.
+En la superbazaro vi provas &acirc;ceti bazajn aferojn kiel rizon, nudelojn, legomojn, ktp.
 
-You're getting close to the cashier to pay, when you see, out of the corner of your eye, your favourite snack. It's been a while since the last time you bought it and it only costs $990. What you're currently carrying costs ''$14.520''. Do you choose to buy only (link: "the basic stuff")[(set: $sueldo to $sueldo - 14520)(goto: "en-casa")] or do you include the (link: "snack")[(set: $sueldo to $sueldo - 15510)(goto: "en-casa")]?</tw-passagedata><tw-passagedata name="en-casa" pid="19" position="815,1768" size="100,100" tags="en-casa">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
+Alprokmisiĝante la kasiston por pagi, vi vidas vian plej ŝatatan manĝeton. Vi delonge ne aĉetas ĝin, kaj nur kostas $990. Kion vi portas kostas ''$14.520''. Ĉu vi decidas &acirc;ceti nur (link: "la bazajn aferojn")[(set: $sueldo to $sueldo - 14520)(goto: "en-casa")] aŭ vi inkludas la (link: "manĝeton")[(set: $sueldo to $sueldo - 15510)(goto: "en-casa")]?</tw-passagedata><tw-passagedata name="en-casa" pid="19" position="815,1768" size="100,100" tags="en-casa">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
-Vi revenis hejmen. Vi pretigas vian tagmanĝon por [[morgaŭ|ma&ntilde;ana2]] kaj enlitiĝas.</tw-passagedata><tw-passagedata name="ma&ntilde;ana2" pid="20" position="815,1916" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
+Vi revenis hejmen. Vi pretigas vian tagmanĝon por [[morgaŭ|ma&ntilde;ana2]] kaj enlitiĝas.</tw-passagedata><tw-passagedata name="ma&ntilde;ana2" pid="20" position="815,1916" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
-Today's friday and it's been a long week. You need to clear your mind.
+Hodiaŭ estas vendredo kaj estis longa semajno. Vi bezonas klarigi vian menson.
 
-You really wanna go outside, but you know you can't spend too much money.
+Vi vere volas iri eksteren, sed vi scias ke vi ne povas elspezi multe da mono.
 
-Suddenly, your [[phone|celular2]] rings.</tw-passagedata><tw-passagedata name="celular2" pid="21" position="815,2068" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+Subite, via [[poŝtelefono|celular2]] sonoras.</tw-passagedata><tw-passagedata name="celular2" pid="21" position="815,2068" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/dh7XVdH.gif"&gt;
-It's a text message from your group of friends, sent by your best friend. The message says:
+Ĝi estas tujmesaĝo de la grupo de viaj amikoj, sendita per viaj plej bona amik$genero. La mesaĝo diras:
 
-&lt;i&gt;"Hey, I was thinking on doing something at my place for my birthday tomorrow!"&lt;/i&gt;
+&lt;i&gt;"Hej, mi pensas pri fari ion ĉe mi por mia naskiĝtago morgaŭ!&lt;/i&gt;
 
-Suddenly, you feel your boss walking behind you, so you put your phone away and continue working until it's [[time to leave|hora de irse]].</tw-passagedata><tw-passagedata name="hora de irse" pid="22" position="813,2218" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
+Subite, vi sentas vian ĉefon pasante malantaŭ vi, do vi forlasas vian poŝtelefonon kaj vi daŭre laboras ĝis la [[horo por eliri|hora de irse]].</tw-passagedata><tw-passagedata name="hora de irse" pid="22" position="813,2218" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
-Today's your best friend's birthday. Unfortunately, $genero lives a bit further so you have to take a bus to get there.
+Hodiaŭ estas la naskiĝtago de via plej bona amik$genero. $genero2 loĝas iom for do vi devas preni la buson por iri tien.
 
-You think you should buy your friend a gift. You know $genero won't get mad at you if you don't buy one, but it would be a nice gesture. What are you going to do?
+Vi pensas ke vi devus &acirc;ceti donacon por via amik$genero. Vi scias ke $genero2 ne ĉagreniĝos se vi ne aĉetos ĝin, sed estus agrabla gesto. Kion vi faros?
 
-&gt; (link: "Buy a gift for $7.000")[(set: $sueldo to $sueldo - 7720)(goto: "cumple")]
-&gt; (link: "Buy a gift for $3.000")[(set: $sueldo to $sueldo - 3720)(goto: "cumple")]
-&gt; (link: "Go without a gift")[(set: $sueldo to $sueldo - 720)(goto: "cumple")]
-&gt; [[Stay at home|Quedarte en casa]]</tw-passagedata><tw-passagedata name="cumple" pid="23" position="738,2368" size="100,100" tags="cumple">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/DIPauK4.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/20ptNxx.gif'&gt;") ]
+&gt; (link: "Aĉeti donacon kontraŭ $7.000")[(set: $sueldo to $sueldo - 7720)(goto: "cumple")]
+&gt; (link: "Aĉeti donacon kontraŭ $3.000")[(set: $sueldo to $sueldo - 3720)(goto: "cumple")]
+&gt; (link: "Iri sen donaco")[(set: $sueldo to $sueldo - 720)(goto: "cumple")]
+&gt; [[Resti hejme|Quedarte en casa]]</tw-passagedata><tw-passagedata name="cumple" pid="23" position="738,2368" size="100,100" tags="cumple">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/DIPauK4.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/20ptNxx.gif'&gt;") ]
 $img
-You arrive at your best friend's house. After having a tough week, you feel brand new after seeing your friends.
+Vi alvenas al la domo de vian plej bonan amik(print:$genero)n. Havinte malmildan semajnon vi sentas vin renoviĝita pro vidi viajn geamikojn.
 
-You haven't seen them in a while, but it's getting late and you don't know if it's a good idea to go back home in a bus after midnight.
+Vi delonge ne vidis ilin, sed malfruiĝas kaj vi ne scias se estas bona ideo reveniĝi hejmen per buso dum la frumateno.
 
-&gt; (link: "Leave early on a bus (-$720)")[(set: $sueldo to $sueldo - 720)(goto: "resto-del-d&iacute;a2")]
-&gt; (link: "Stay a bit longer and come back on a private vehicle (-$3.460)")[(set: $sueldo to $sueldo - 3460)(goto: "resto-del-d&iacute;a2")]</tw-passagedata><tw-passagedata name="Quedarte en casa" pid="24" position="890,2368" size="100,100" tags="">(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+&gt; (link: "Eliri frue per buso (-$720)")[(set: $sueldo to $sueldo - 720)(goto: "resto-del-d&iacute;a2")]
+&gt; (link: "Resti dum tempeto plu kaj reveniĝi per privata veturilo (-$3.460)")[(set: $sueldo to $sueldo - 3460)(goto: "resto-del-d&iacute;a2")] </tw-passagedata><tw-passagedata name="Quedarte en casa" pid="24" position="890,2368" size="100,100" tags="">(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/dh7XVdH.gif"&gt;
-You told your friend you couldn't go. Thankfully, $genero says $genero understands, but you still feel guilty.
+Vi diris al via amik$genero ke vi ne povus iri. Via amik$genero komprenas, sed vi ankoraŭ sentas vin kulpa.
 
-Truth is you're not sure if you will be able to reach the end of the month, so you have to be careful with your expenses.
+La vero estas ke vi ne sentas certe pri via kapablo de atingi la monatfinon, do vi estu zorgema pri viaj elspezoj.
 
-You choose to stay the [[rest of the day|resto-del-d&iacute;a]] watching stuff on your phone.</tw-passagedata><tw-passagedata name="resto-del-d&iacute;a" pid="25" position="895,2501" size="100,100" tags="resto-del-d&iacute;a">(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
+Vi decidas [[resti dum la tagresto|resto-del-d&iacute;a]] spektante aferojn en via poŝtelefono.</tw-passagedata><tw-passagedata name="resto-del-d&iacute;a" pid="25" position="895,2501" size="100,100" tags="resto-del-d&iacute;a">(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
-The weekend is almost over. You don't have plans for today, so you choose to stay home watching videos on your phone.
+La semajnfino preskaŭ finiĝas. Vi havas neniun planon por hodiaŭ, tial vi decidas resti hejme kaj spekti filmojn en via poŝtelefono.
 
-Suddenly, you get a [[notification|notificaci&oacute;n]].</tw-passagedata><tw-passagedata name="notificaci&oacute;n" pid="26" position="890,2668" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+Subite, vi ricevas [[sciigon|notificaci&oacute;n]].</tw-passagedata><tw-passagedata name="notificaci&oacute;n" pid="26" position="890,2668" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/CK4HN1L.gif"&gt;
-&lt;i&gt;&ldquo;Dear Customer: Your mobile plan is about to run out. Remember you can top up online or at any of our offices.&rdquo;&lt;/i&gt;
+&lt;i&gt;&ldquo;Estimata kliento: Via poŝtelefona plano preskaŭ finiĝos. Memoru ke vi povas replenigi ĝin rete aŭ en iu ajn el niaj oficejoj.&rdquo;&lt;/i&gt;
 
-You browse the different mobile plans available, and among the cheapest (link: "you find one that is only $7.000")[(set: $sueldo to $sueldo - 7000)(goto: "saldo")]. It has enough minutes and data, so it should be alright.</tw-passagedata><tw-passagedata name="creditos" pid="27" position="996,10545" size="100,100" tags="creditos">(set: $sueldofinal to $sueldo - 200000)&lt;h1&gt;Results&lt;/h1&gt;You finished this month with (print: asPesos($sueldo)) and your health is at (print: $salud)0%. ''If it wasn't for the loan, you'd have ended this month with (print: asPesos($sueldofinal))''.
+Vi retumas kontrolante la diversajn poŝtelefonajn planojn, kaj inter la plej malmultekostaj (link: "vi trovas unu kiu kostas $7.000")[(set: $sueldo to $sueldo - 7000)(goto: "saldo")]. Ĝi havas sufice da minutoj kaj datumoj.</tw-passagedata><tw-passagedata name="creditos" pid="27" position="996,10545" size="100,100" tags="creditos">(set: $sueldofinal to $sueldo - 200000)&lt;h1&gt;Results&lt;/h1&gt;You finished this month with (print: asPesos($sueldo)) and your health is at (print: $salud)0%. ''If it wasn't for the loan, you'd have ended this month with (print: asPesos($sueldofinal))''.
 
 You still have almost 2 decades left to finish paying your student debt, with fees that go up every month.
 
@@ -214,27 +214,27 @@ Pixel Fonts: &lt;a href="https://chevyray.itch.io/pixel-fonts" target="_blank"&g
 Art &amp; Development: &lt;a href="https://twitter.com/Burasto" target="_blank"&gt;@Burasto&lt;/a&gt;
 
 Thanks to BerganJudge for the idea of making a game related to the minimum wage.
-And thank you for playing it!</tw-passagedata><tw-passagedata name="saldo" pid="28" position="893,2804" size="100,100" tags="saldo">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/83wAVpd.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/EMmyc1W.gif'&gt;") ]
+And thank you for playing it!</tw-passagedata><tw-passagedata name="saldo" pid="28" position="893,2804" size="100,100" tags="saldo">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/83wAVpd.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/EMmyc1W.gif'&gt;") ]
 $img
-After topping up your phone, you decide to continue surfing the internet and chatting with friends until you get sleepy.
-
-Tomorrow is [[Monday|lunes]] and you need to rest.</tw-passagedata><tw-passagedata name="lunes" pid="29" position="893,2927" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
+Poste vi replenigis vian poŝtelefonon, vi decidas daŭrigi retsurfadon kaj babiladon kun viaj geamikoj ĝis vi dormemuliĝas.
+Morgaŭ estas [[lundo|lunes]] kaj vi bezonas ripozi.</tw-passagedata><tw-passagedata name="lunes" pid="29" position="893,2927" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
-The week starts. Luckily, today wasn't as heavy as last week, but you notice ''some of your co-workers are coughing and sneezing a lot''.
+Comienza la semana. Por suerte, hoy no has tenido tanta carga como la semana pasada, pero notas que ''algunos de tus compa&ntilde;eros de oficina est&aacute;n tosiendo y estornudando bastante''.
 
-You keep working until the time to leave arrives, and remember you should try to [[pass by the supermarket|pasar al supermercado]].</tw-passagedata><tw-passagedata name="en la micro" pid="30" position="898,3325" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/qjQt66B.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/10PUjCZ.gif'&gt;") ]
+Sigues trabajando hasta que llega la hora de irse, y recuerdas que deber&iacute;as aprovechar de [[pasar al supermercado]].</tw-passagedata><tw-passagedata name="en la micro" pid="30" position="898,3325" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/qjQt66B.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/10PUjCZ.gif'&gt;") ]
 $img
-On your way home you saw many people sneezing and coughing. You hope you didn't catch anything. It might just be an allergic reaction.
+En la vojo al via domo vi vidas plurajn homojn kiuj ternas kaj tusas.  Vi esperas, ke vi ne infektiĝu. Ĝi povus esti alergia reago.
 
-You don't understand why you feel so tired, so after you get home, you [[go straight to your bed|directo a la cama]].</tw-passagedata><tw-passagedata name="directo a la cama" pid="31" position="896,3475" size="100,100" tags="">(set: $dia to $dia + 1)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/aashkao.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/232mOpP.gif'&gt;") ]
+Vi ne komprenas kial vi sentas vin tre laca, do poste vi alvenas hejmen, vi [[rekte iras al la liton|directo a la cama]].</tw-passagedata><tw-passagedata name="directo a la cama" pid="31" position="896,3475" size="100,100" tags="">(set: $dia to $dia + 1)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/aashkao.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/232mOpP.gif'&gt;") ]
 $img
-Your alarm rings. You feel like a truck just ran over you. You feel weak, your head hurts. You wonder if you caught the same thing your co-workers have, or if it's just from exhaustion.
+Via vekhorloĝo sonoras. Vi sentas vin surveturita per kamiono. Vi sentas vin malforta, via kapo doloras. Vi scivolas, ĉu vi kaptis la saman kiun viaj laborkunuloj havas, aŭ ĝi estas laceco.
 
-You think that maybe it might be a good idea to stay in bed today, but you know that it will affect your next salary. On the other hand, if you go to a doctor you will have to pay $5.910 for an appointment and maybe buy some medication. What will you do?
+Vi pensas, ke estus bone ne labori hodiaŭ, sed vi scias ke tio influos en via sekva salajro. Aliflanke, se vi vizitos kuraciston vi pagos $5.910 por rendevuon kaj eble aĉeti iujn kuracilojn. Kion vi faros?
 
-&gt;[[Go to work anyways.|Ir a trabajar igual.]]
-&gt;[[Go see a doctor (-$5.910).|Ir al doctor (-$5.910).]]
-&gt;[[Rest in bed.|Guardar reposo en cama.]]</tw-passagedata><tw-passagedata name="Ir a trabajar igual." pid="32" position="748,3627" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
+&gt; [[Iri al la laborejo ĉiuokaze|Ir a trabajar igual.]]
+&gt; [[Iri al kuracisto|Ir al doctor (-$5.910).]]
+&gt; [[Ripozi enlite|Guardar reposo en cama.]]
+</tw-passagedata><tw-passagedata name="Ir a trabajar igual." pid="32" position="748,3627" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Day $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Money:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
 After you arrive to the office, you notice that even more co-workers than yesterday are missing. You try to work normally, but the screenlights are bothering you and you have problems focusing.
 

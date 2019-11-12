@@ -41,7 +41,7 @@ for row in reader:
     if name == 'notificación en tu celular2':
         continue
 
-    hud = hud.replace("Dinero:", "Mono:")
+    hud = hud.replace("Dinero", "Mono")
     hud = hud.replace("Día ", "Tago ")
     if hud:
         hud += "\n"
