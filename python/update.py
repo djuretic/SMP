@@ -1,6 +1,7 @@
 import csv
 import os
 from io import StringIO
+import re
 import requests
 from bs4 import BeautifulSoup
 from colorama import init, Fore
@@ -35,6 +36,7 @@ next(reader) # Header
 for row in reader:
     name = row[0]
     hud = row[1]
+    spanish = row[2]
     esperanto = row[4]
     # print(Fore.GREEN + esperanto)
 
@@ -52,6 +54,12 @@ for row in reader:
         continue
     passage.string = hud + esperanto
     print(name)
+
+    es_links = [r.split('|')[-1] for r in re.findall('\[\[([^\[\]]*)\]\]', spanish)]
+    eo_links = [r.split('|')[-1] for r in re.findall('\[\[([^\[\]]*)\]\]', esperanto)]
+    if es_links != eo_links:
+        print(es_links, eo_links)
+    assert es_links == eo_links
 
 with open(output_file, "wb") as file:
     file.write(soup.encode(formatter="html"))
