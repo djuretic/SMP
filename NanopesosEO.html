@@ -104,11 +104,11 @@ $img
 Vi finas fari la bankan transdonon. Restas ''(print: asPesos($sueldo))'' en via konto (set: $luz to 0) 
 [[Morgaŭ|Ma&ntilde;ana]] vi devas vekiĝi frue por atendi la buson kaj iri labori.</tw-passagedata><tw-passagedata name="Postergar pago de cuenta" pid="5" position="850,725" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 $img
-Vi decidas prokrasti la pagon de la kalkulo, kaj vi agordas rememorigon por 2 semajnoj pli. [[Morgaŭ|Ma&ntilde;ana]] vi devas labori.</tw-passagedata><tw-passagedata name="Ma&ntilde;ana" pid="6" position="700,873" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
+Vi decidas prokrasti la pagon de la kalkulo, kaj vi agordas rememorigon por 2 semajnoj pli. [[Morgaŭ|Ma&ntilde;ana]] vi devos labori.</tw-passagedata><tw-passagedata name="Ma&ntilde;ana" pid="6" position="700,873" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
 Ĉi tiu estas via laborejo. Via tago ĵus finiĝis, vi estas tre laca kaj [[vi nur deziras preni la buson por iri hejmen|regresar a tu casa]].
 
-Hodiaŭ malestis unu el viaj kunlaborant(print: $genero)j, do via ĉefo bezonas ke iu [[kromtage restis faranta (print: $genero2)ajn taskojn|se quede hasta tarde haciendo sus tareas]]. Se vi akceptas, vi ricevos ''$15.000''-an bonon je la monatfino, sed ĝi povas damaĝi vian sanon.</tw-passagedata><tw-passagedata name="Inicio" pid="7" position="775,0" size="100,100" tags="">&lt;h1&gt;Antaŭ ol komenci...&lt;/h1&gt; 
+Hodiaŭ forestis unu el viaj kunlaborant(print: $genero)j, do via ĉefo bezonas ke iu [[kromtage restis faranta (print: $genero2)ajn taskojn|se quede hasta tarde haciendo sus tareas]]. Se vi akceptas, vi ricevos ''$15.000''-an bonon je la monatfino, sed ĝi povas damaĝi vian sanon.</tw-passagedata><tw-passagedata name="Inicio" pid="7" position="775,0" size="100,100" tags="">&lt;h1&gt;Antaŭ ol komenci...&lt;/h1&gt; 
 Ĉi tiu ludo estas simulilo de la administrado de buĝeto inspirita de la "malegaleco" en Ĉilio. Por ĉi tiu ekzerco, la nunaj prezoj de la luado, pagoj por malsanokosta asekuro, transporto kaj aliaj estis uzataj.
 
 Ĉi tiu ludo uzas la ''numeralan sistemon uzatan en Ĉilio'', do mil ĉiliaj pesoj estos skribata kiel $1.000 anstataŭ $1,000.
@@ -164,7 +164,7 @@ Vi vere volas iri eksteren, sed vi scias ke vi ne povas elspezi multe da mono.
 
 Subite, via [[poŝtelefono|celular2]] sonoras.</tw-passagedata><tw-passagedata name="celular2" pid="21" position="815,2068" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/dh7XVdH.gif"&gt;
-Ĝi estas tujmesaĝo de la grupo de viaj amikoj, sendita per viaj plej bona amik$genero. La mesaĝo diras:
+Ĝi estas tujmesaĝo de la grupo de viaj amikoj, sendita de via plej bona amik$genero. La mesaĝo diras:
 
 &lt;i&gt;"Hej, mi pensas pri fari ion ĉe mi por mia naskiĝtago morgaŭ!&lt;/i&gt;
 
@@ -179,16 +179,16 @@ Vi pensas ke vi devus &acirc;ceti donacon por via amik$genero. Vi scias ke $gene
 &gt; (link: "Iri sen donaco")[(set: $sueldo to $sueldo - 720)(goto: "cumple")]
 &gt; [[Resti hejme|Quedarte en casa]]</tw-passagedata><tw-passagedata name="cumple" pid="23" position="738,2368" size="100,100" tags="cumple">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/DIPauK4.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/20ptNxx.gif'&gt;") ]
 $img
-Vi alvenas al la domo de vian plej bonan amik(print:$genero)n. Havinte malmildan semajnon vi sentas vin renoviĝita pro vidi viajn geamikojn.
+Vi alvenas al la domo de via plej bona amik(print:$genero). Spertinte malmildan semajnon vi sentas vin renovigita pro vidi viajn geamikojn.
 
-Vi delonge ne vidis ilin, sed malfruiĝas kaj vi ne scias ĉu estas bona ideo reveniĝi hejmen per buso dum la frumateno.
+Vi delonge ne vidis ilin, sed malfruiĝas kaj vi ne scias ĉu estas bona ideo reveni hejmen per buso dum la frumateno.
 
 &gt; (link: "Eliri frue per buso (-$720)")[(set: $sueldo to $sueldo - 720)(goto: "resto-del-d&iacute;a2")]
-&gt; (link: "Resti dum tempeto plu kaj reveniĝi per privata veturilo (-$3.460)")[(set: $sueldo to $sueldo - 3460)(goto: "resto-del-d&iacute;a2")] </tw-passagedata><tw-passagedata name="Quedarte en casa" pid="24" position="890,2368" size="100,100" tags="">(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+&gt; (link: "Resti dum tempeto plu kaj reveni per privata veturilo (-$3.460)")[(set: $sueldo to $sueldo - 3460)(goto: "resto-del-d&iacute;a2")] </tw-passagedata><tw-passagedata name="Quedarte en casa" pid="24" position="890,2368" size="100,100" tags="">(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/dh7XVdH.gif"&gt;
 Vi diris al via amik$genero ke vi ne povus iri. Via amik$genero komprenas, sed vi ankoraŭ sentas vin kulpa.
 
-La vero estas ke vi ne sentas certe pri via kapablo de atingi la monatfinon, do vi estu zorgema pri viaj elspezoj.
+La vero estas ke vi ne sentas certe pri via kapablo atingi la monatfinon, do vi estu zorgema pri viaj elspezoj.
 
 Vi decidas [[resti dum la tagresto|resto-del-d&iacute;a]] spektante aferojn en via poŝtelefono.</tw-passagedata><tw-passagedata name="resto-del-d&iacute;a" pid="25" position="895,2501" size="100,100" tags="resto-del-d&iacute;a">(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
@@ -196,7 +196,7 @@ La semajnfino preskaŭ finiĝas. Vi havas neniun planon por hodiaŭ, tial vi dec
 
 Subite, vi ricevas [[sciigon|notificaci&oacute;n]].</tw-passagedata><tw-passagedata name="notificaci&oacute;n" pid="26" position="890,2668" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/CK4HN1L.gif"&gt;
-&lt;i&gt;&ldquo;Estimata kliento: Via poŝtelefona plano preskaŭ finiĝos. Memoru ke vi povas replenigi ĝin rete aŭ en iu ajn el niaj oficejoj.&rdquo;&lt;/i&gt;
+&lt;i&gt;&ldquo;Estimata kliento: Via poŝtelefona plano baldaŭ finiĝos. Memoru ke vi povas replenigi ĝin rete aŭ en iu ajn el niaj oficejoj.&rdquo;&lt;/i&gt;
 
 Vi retumas kontrolante la diversajn poŝtelefonajn planojn, kaj inter la plej malmultekostaj (link: "vi trovas unu kiu kostas $7.000")[(set: $sueldo to $sueldo - 7000)(goto: "saldo")]. Ĝi havas sufice da minutoj kaj datumoj.</tw-passagedata><tw-passagedata name="creditos" pid="27" position="996,10545" size="100,100" tags="creditos">(set: $sueldofinal to $sueldo - 200000)&lt;h1&gt;Rezultoj&lt;/h1&gt;Vi finis ĉi tiun monaton kun (print: asPesos($sueldo)) kaj via sano estas je (print: $salud)0%. ''Sen la prunto, vi finus ĉi-monate kun (print: asPesos($sueldofinal))''.
 
@@ -216,24 +216,24 @@ Arto &amp; Konstruado: &lt;a href="https://twitter.com/Burasto" target="_blank"&
 Dankon al BerganJudge pro la ideo de konstrui ludon rilate al la minimuma salajro.
 Kaj dankon al vi pro ludi ĝin!</tw-passagedata><tw-passagedata name="saldo" pid="28" position="893,2804" size="100,100" tags="saldo">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/83wAVpd.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/EMmyc1W.gif'&gt;") ]
 $img
-Poste vi replenigis vian poŝtelefonon, vi decidas daŭrigi retsurfadon kaj babiladon kun viaj geamikoj ĝis vi endormiĝas.
+Poste vi replenigis vian poŝtelefonon, vi decidas daŭrigi la retsurfadon kaj babiladon kun viaj geamikoj ĝis vi endormiĝas.
 Morgaŭ estas [[lundo|lunes]] kaj vi bezonas ripozi.</tw-passagedata><tw-passagedata name="lunes" pid="29" position="893,2927" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $dia to $dia + 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
 Komenciĝas la semajno. Bonŝance, hodiaŭ vi delonge ne havis tiom da laborkvanto kiel la pasinta semajno, sed vi rimarkas ke "iu el viaj kunlaborantoj tusas kaj ternas".
 
-Vi laboradas ĝis la elira horo, kaj vi rememoras ke vi koplodus [[iri al la superbazaro|pasar al supermercado]].</tw-passagedata><tw-passagedata name="en la micro" pid="30" position="898,3325" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/qjQt66B.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/10PUjCZ.gif'&gt;") ]
+Vi laboradas ĝis la elira horo, kaj vi memoras ke vi klopodu [[iri al la superbazaro|pasar al supermercado]].</tw-passagedata><tw-passagedata name="en la micro" pid="30" position="898,3325" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/qjQt66B.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/10PUjCZ.gif'&gt;") ]
 $img
-En la vojo al via domo vi vidas plurajn homojn kiuj ternas kaj tusas.  Vi esperas, ke vi ne infektiĝu. Ĝi povus esti alergia reago.
+Sur la vojo al via domo vi vidas plurajn homojn kiuj ternas kaj tusas. Vi esperas, ke vi ne infektiĝis. Ĝi povus esti alergia reago.
 
 Vi ne komprenas kial vi sentas vin tre laca, do poste vi alvenas hejmen, vi [[rekte iras al la liton|directo a la cama]].</tw-passagedata><tw-passagedata name="directo a la cama" pid="31" position="896,3475" size="100,100" tags="">(set: $dia to $dia + 1)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/aashkao.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/232mOpP.gif'&gt;") ]
 $img
-Via vekhorloĝo sonoras. Vi sentas vin surveturita per kamiono. Vi sentas vin malforta, via kapo doloras. Vi scivolas, ĉu vi kaptis la saman kiun viaj kunlaborantoj havas, aŭ ĝi estas laceco.
+Via vekhorloĝo sonoras. Vi sentas vin surveturita per kamiono. Vi sentas vin malforta, via kapo doloras. Vi scivolas, ĉu vin kaptis la sama afero kiun viaj kunlaborantoj havas, aŭ ĉu ĝi estas laceco.
 
-Vi pensas, ke estus bone ne labori hodiaŭ, sed vi scias ke tio influos en via sekva salajro. Aliflanke, se vi vizitos kuraciston vi pagos $5.910 por rendevuon kaj eble aĉeti iujn kuracilojn. Kion vi faros?
+Vi pensas, ke estus bone ne labori hodiaŭ, sed vi scias ke tio influos vian sekvan salajron. Aliflanke, se vi vizitos kuraciston vi pagos $5.910 por rendevuo kaj eble aĉetos iujn kuracilojn. Kion vi faros?
 
-&gt; [[Iri al la laborejo ĉiuokaze|Ir a trabajar igual.]]
-&gt; [[Iri al kuracisto|Ir al doctor (-$5.910).]]
-&gt; [[Ripozi enlite|Guardar reposo en cama.]]
+&gt; [[Iri al la laborejo ajnokaze.|Ir a trabajar igual.]]
+&gt; [[Iri al kuracisto (-$5.910).|Ir al doctor (-$5.910).]]
+&gt; [[Ripozi enlite.|Guardar reposo en cama.]]
 </tw-passagedata><tw-passagedata name="Ir a trabajar igual." pid="32" position="748,3627" size="100,100" tags="">(set: $sueldo to $sueldo - 800)(set: $salud to $salud - 1)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/KKXbsEI.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/AWxj5I7.gif'&gt;") ]
 $img
 Poste vi alvenis al la laborejo, vi rimarkas ke eĉ pliaj el viaj laburkunuloj mankas. Vi klopodas labori kutime, sed la ekranaj briloj ĝenas vin kaj vi havas problemojn por enfokusiĝi. Kelkajn horojn poste vi alvenis, via tusado malpliboniĝas kaj unu el viaj ĉefoj alproksimiĝas. Li admonas vin ne veni al la laborejo ĝis vi pliboniĝu. Vi prenas viajn aferojn kaj vi iras [[hejmen|hogar]].</tw-passagedata><tw-passagedata name="Ir al doctor (-$5.910)." pid="33" position="898,3625" size="100,100" tags="">(set: $proxsueldo to $proxsueldo - 15000)(set: $sueldo to $sueldo - 5910)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/7BSf2n1.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/KbrOVd0.gif'&gt;") ]
