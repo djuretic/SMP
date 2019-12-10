@@ -28,6 +28,11 @@ def get_passages(soup):
     return passages
 
 reader = csv.reader(StringIO(res.content.decode('utf-8')), delimiter=',')
+
+# change title
+for storydata in soup.find_all("tw-storydata"):
+    storydata["name"] = "NanopesosEO"
+
 passages = get_passages(soup)
 ids = list(passages.keys())
 ids.sort()
