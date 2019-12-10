@@ -99,7 +99,7 @@ $img
 Vi sentas vin bonŝanca havante vian propran lokon, kvankam vi pagas ''$200.000'' kontraŭ 17 kvadrataj metroj. Vi scias, ke se vi perdos ĝin, estos tre malfacile trovi alian apartamenton per tiu valoro en la ĉefurbo.
 
 Subite, via [[poŝtelefono|celular]] sonoras.</tw-passagedata><tw-passagedata name="celular" pid="3" position="775,573" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt; &lt;img src="https://i.imgur.com/i92F58W.gif"&gt;
-&lt;i&gt;&ldquo;Nova Sciigo: Elektra Kalkulo. Totalo: $8.050. Limdato: 30 tagoj pli.&rdquo;&lt;/i&gt; Vi povas [[tuj pagi ĉi tiun kalkulon|Pagar cuenta de luz]], aŭ [[prokrasti ĝin|Postergar pago de cuenta]] kaj vi ricevos memorigon poste.</tw-passagedata><tw-passagedata name="Pagar cuenta de luz" pid="4" position="700,725" size="100,100" tags="">(set: $sueldo to $sueldo - 8050)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+&lt;i&gt;&ldquo;Nova Sciigo: Elektra Kalkulo. Totalo por pagi: $8.050. Limdato: 30 tagoj pli.&rdquo;&lt;/i&gt; Vi povas [[tuj pagi ĉi tiun kalkulon|Pagar cuenta de luz]], aŭ [[prokrasti ĝin|Postergar pago de cuenta]] kaj vi ricevos memorigon poste.</tw-passagedata><tw-passagedata name="Pagar cuenta de luz" pid="4" position="700,725" size="100,100" tags="">(set: $sueldo to $sueldo - 8050)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 $img
 Vi finas fari la bankan transdonon. Restas ''(print: asPesos($sueldo))'' en via konto (set: $luz to 0) 
 [[Morgaŭ|Ma&ntilde;ana]] vi devas vekiĝi frue por atendi la buson kaj iri labori.</tw-passagedata><tw-passagedata name="Postergar pago de cuenta" pid="5" position="850,725" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
@@ -328,7 +328,7 @@ Dum vi fokuse laboras, vi rimarkas [[sciigon en la poŝtelefono|notificaci&oacut
 $img
 Hodiaŭ finfine vi plibone vekiĝis, vi almenaŭ ne trapasos la semajnfinon enlite, sed vi zorgetas pri via du-taga laboreja foresto. Vi scias ke tiuj tagoj estos dekalkulitaj el via sekva salajro.
 
-Retumante vi rimarkas ke estas [[sciigo en via poŝtelefono|notificaci&oacute;n en tu celular|notificaci&oacute;n en tu celular2]].</tw-passagedata><tw-passagedata name="notificaci&oacute;n en tu celular" pid="52" position="899,4732" size="100,100" tags="">(set: $sueldo to $sueldo - 800)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
+Retumante vi rimarkas ke estas [[sciigo en via poŝtelefono|notificaci&oacute;n en tu celular2]].</tw-passagedata><tw-passagedata name="notificaci&oacute;n en tu celular" pid="52" position="899,4732" size="100,100" tags="">(set: $sueldo to $sueldo - 800)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;
 &lt;img src="https://i.imgur.com/Hz9tWMz.gif"&gt;
 &lt;i&gt;"Nova Sciigo Akva Kalkulo.
 Totalo por pagi: $14.710."&lt;/i&gt;
@@ -382,7 +382,7 @@ Vi iras al la superbazaro. Ĝi baldaŭ fermiĝos kaj vi ĵus rimarkis ke vi forg
 
 Vi povas elekti inter [[aĉeti morgaŭ|15m]], sed vi devos aĉeti tagmang&ocirc;n en la oficejo, aŭ vi povas [[aĉeti la sakon|16m]] kaj porti ĉion kion vi bezonas por pretigi la tagmanĝojn de la cetero de la semajno.</tw-passagedata><tw-passagedata name="16m" pid="65" position="750,6505" size="100,100" tags="">(set: $sueldo to $sueldo - 15540)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
-Vi alvenas al via domo. Malfruas sed vi kuiras. Vi pretigas rizon kaj flankpladon. Vi pensas ke vi devus manĝi pli sane, sed vi scias ke la legomoj en la superbazaro multekostas. Eble dum la semajnfino vi provos viziti la foiron.
+Vi alvenas al via domo. Malfruas sed vi kuiras. Vi pretigas rizon kaj garnaĵon. Vi pensas ke vi devus manĝi pli sane, sed vi scias ke la legomoj en la superbazaro multekostas. Eble dum la semajnfino vi provos viziti la foiron.
 
 Vi finas kuiri, kaj [[enlitiĝas|te vas a acostar]].</tw-passagedata><tw-passagedata name="15m" pid="66" position="900,6505" size="100,100" tags="">(set: $sueldo to $sueldo - 800)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
@@ -415,7 +415,7 @@ Post kiam vi finas kuiri, vi [[enlitiĝas|day17]].</tw-passagedata><tw-passageda
 $img
 Vi laboras koncentrante vin en la oficejo. La etoso estas iom streĉa. Vi ne komprenas kio okazas ĝis vi vidas iun el viaj kolegoj iom malĝoja, dum aliaj kolegoj konsolas lin.
 
-Antaŭ ol vi povas leviĝi kaj alproksimiĝi, vi aŭskultas aliajn afektitajn kunlaborantojn, dirantajn, ke ili bedaŭros lin. Li ĵus estis maldungata de la ĉefo. Vi ne komprenas kial li estis maldungita, li estis bonega laboristo. Vi demandas, ĉu eble la kompanio reduktas la personaron, kaj ĉu la samo povus okazi al vi.
+Antaŭ ol vi povas leviĝi kaj alproksimiĝi, vi aŭskultas aliajn afektitajn kunlaborantojn, dirantajn, ke ili bedaŭros lin. Li ĵus estis maldungata de la ĉefo. Vi ne komprenas kial li estis maldungita, li estis bonega laboristo. Vi demandas, ĉu eble la kompanio reduktas la dungitaron, kaj ĉu la samo povus okazi al vi.
 
 Vi rapide revenas por prilabori vian taskon, penante pli ol kutime, kvazaŭ tio konvinkus vian dunganton ke vi streĉas por la kompanio. Vi agadas tiel ĝis [[la elira horo|llega la hora de irse]].</tw-passagedata><tw-passagedata name="llega la hora de irse" pid="73" position="902,7391" size="100,100" tags="">(set: $sueldo to $sueldo - 800)&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/edkmMll.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/eaIJsUK.gif'&gt;") ]
 $img
@@ -480,7 +480,7 @@ Estas mardo, vi ĵus revenis de la oficejo kaj vi kontrolas vian telefonon.
 Post legi vian retpoŝton, vi rimarkas, ke vi havas retpoŝton pri via [[gasa kalkulo|cuenta de gas]].</tw-passagedata><tw-passagedata name="cuenta de gas" pid="88" position="919,9186" size="100,100" tags="">&lt;div class="hud"&gt;&lt;div class="dia"&gt;''Tago $dia''&lt;/div&gt;&lt;div class="dinero"&gt;''Mono:'' (print: asPesos($sueldo))&lt;/div&gt;&lt;/div&gt;(if: $gen is 0) [ (set: $img to "&lt;img src='https://i.imgur.com/uC3DlDD.gif'&gt;") ](if: $gen is 1) [ (set: $img to "&lt;img src='https://i.imgur.com/uC3DlDD.gif'&gt;") ]
 $img
 &lt;i&gt;&ldquo;Nova Sciigo: Gasa Kalkulo.
-Pagota totalo: $4.140&rdquo;&lt;/i&gt;
+Totalo por pagi: $4.140&rdquo;&lt;/i&gt;
 
 Bonŝance ĉi tiu kalkulo estas pli malmultekosta ol tiuj de la elektro aŭ akvo. Vi decidas tuj pagi por ne akumuli kalkulojn.
 

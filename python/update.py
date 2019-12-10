@@ -55,6 +55,11 @@ for row in reader:
     passage.string = hud + esperanto
     print(name)
 
+    eo_all_links = re.findall('\[\[([^\[\]]*)\]\]', esperanto)
+    for r in eo_all_links:
+        assert 1 <= len(r.split('|')) <=2
+
+
     es_links = [r.split('|')[-1] for r in re.findall('\[\[([^\[\]]*)\]\]', spanish)]
     eo_links = [r.split('|')[-1] for r in re.findall('\[\[([^\[\]]*)\]\]', esperanto)]
     if es_links != eo_links:
